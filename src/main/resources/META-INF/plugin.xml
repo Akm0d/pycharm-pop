@@ -1,13 +1,20 @@
 <idea-plugin>
+<<<<<<< HEAD
     <id>com.github.akm0d.pycharmpop</id>
     <name>pycharm-pop</name>
     <vendor>akm0d</vendor>
+=======
+    <id>org.jetbrains.plugins.pop-completion</id>
+    <name>Pop Completion</name>
+    <vendor>email="tyjohnson@vmware.com" url="https://gitlab.com/saltstack/pop/pop-completion">VMware</vendor>
+>>>>>>> 22dd244 (Applied project templates)
 
-    <!-- Product and plugin compatibility requirements -->
-    <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.python</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+<<<<<<< HEAD
         <applicationService serviceImplementation="com.github.akm0d.pycharmpop.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.akm0d.pycharmpop.services.MyProjectService"/>
     </extensions>
@@ -16,4 +23,10 @@
         <listener class="com.github.akm0d.pycharmpop.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+=======
+        <completion.contributor order="first" language="Python" id="pop" implementationClass="org.jetbrains.plugins.pop_completion.entry.PopTreeContributor"/>
+        <gotoDeclarationHandler implementation="org.jetbrains.plugins.pop_completion.go_to_decl_providers.PopGoToDeclaration"/>
+    </extensions>
+
+>>>>>>> 22dd244 (Applied project templates)
 </idea-plugin>
