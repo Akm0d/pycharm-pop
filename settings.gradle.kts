@@ -1,1 +1,1 @@
-rootProject.name = "pycharm-pop"
+rootProject.name = "pop-completion"

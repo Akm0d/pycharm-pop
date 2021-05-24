@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# pycharm-pop Changelog
+# pop-completion Changelog
 
 ## [Unreleased]
 <<<<<<< HEAD
