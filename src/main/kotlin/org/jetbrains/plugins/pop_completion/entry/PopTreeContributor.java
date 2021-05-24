@@ -1,29 +1,19 @@
 package org.jetbrains.plugins.pop_completion.entry;
 
 import com.intellij.codeInsight.completion.CompletionContributor;
-import com.intellij.codeInsight.completion.CompletionType;
-import com.intellij.patterns.PlatformPatterns;
-import com.jetbrains.python.psi.PyCallable;
-import com.jetbrains.python.psi.PyNamedParameter;
-import org.jetbrains.plugins.pop_completion.completion_providers.PopTreeProvider;
+import com.intellij.codeInsight.completion.CompletionParameters;
+import com.intellij.codeInsight.completion.CompletionResultSet;
+import org.jetbrains.annotations.NotNull;
 
 /**
- * provides associative array keys autocomplete
- * using declaration inside the initial function
- * that created this array
+ * Provides completion based on information returned by "pop-tree" in the current interpreter's context
  */
 public class PopTreeContributor extends CompletionContributor
 {
-    public PopTreeContributor()
-    {
-        this.extend(
-                CompletionType.BASIC,
-                PlatformPatterns.psiElement()
-                        .withSuperParent(2, PyNamedParameter.class)
-                        .withSuperParent(2, PyCallable.class)
-                ,
-                new PopTreeProvider()
-        );
-
+    @Override
+    public void fillCompletionVariants(@NotNull CompletionParameters parameters, @NotNull CompletionResultSet result) {
+        // TODO add completion results based on pop-tree matching with the current parameters
+        super.fillCompletionVariants(parameters, result);
     }
+
 }
