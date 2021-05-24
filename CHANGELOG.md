@@ -3,8 +3,6 @@
 # pop-completion Changelog
 
 ## [Unreleased]
-<<<<<<< HEAD
-=======
 ### Changed
 - Remove reference to the `jcenter()` from Gradle configuration file
 - Update `pluginVerifierIdeVersions` to `2020.2.4, 2020.3.4, 2021.1.2`

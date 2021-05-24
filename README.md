@@ -37,9 +37,6 @@ To keep everything working, do not remove `<!-- ... -->` sections.
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
-<<<<<<< HEAD
-[template]: https://github.com/JetBrains/intellij-platform-plugin-template
-=======
 - [Getting started](#getting-started)
 - [Gradle configuration](#gradle-configuration)
 - [Plugin template structure](#plugin-template-structure)

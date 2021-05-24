@@ -1,6 +1,7 @@
 package org.jetbrains.plugins.pop_completion.entry;
 
-import com.intellij.codeInsight.completion.*;
+import com.intellij.codeInsight.completion.CompletionContributor;
+import com.intellij.codeInsight.completion.CompletionType;
 import com.intellij.patterns.PlatformPatterns;
 import com.jetbrains.python.psi.PyCallable;
 import com.jetbrains.python.psi.PyNamedParameter;
