@@ -4,12 +4,12 @@ import com.intellij.codeInsight.navigation.actions.GotoDeclarationHandler;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.psi.PsiElement;
 import org.jetbrains.annotations.Nullable;
-import org.jetbrains.lang.pop.Hub;
+import org.jetbrains.lang.PopTree;
 
 /**
  * go to declaration functionality for associative array keys
  */
-public class PopGoToDeclaration extends Hub implements GotoDeclarationHandler
+public class PopGoToDeclaration extends PopTree implements GotoDeclarationHandler
 {
     @Nullable
     @Override
